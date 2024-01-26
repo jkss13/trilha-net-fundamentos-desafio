@@ -9,7 +9,7 @@ Você foi contratado para construir um sistema para um estacionamento, que será
 
 ## Proposta
 Você precisará construir uma classe chamada "Estacionamento", conforme o diagrama abaixo:
-![Diagrama de classe estacionamento](diagrama_classe_estacionamento.png)
+![Diagrama de classe estacionamento](der_atualizado.png)
 
 A classe contém três variáveis, sendo:
 
@@ -35,4 +35,10 @@ Por último, deverá ser feito um menu interativo com as seguintes ações imple
 
 
 ## Solução
-O código está pela metade, e você deverá dar continuidade obedecendo as regras descritas acima, para que no final, tenhamos um programa funcional. Procure pela palavra comentada "TODO" no código, em seguida, implemente conforme as regras acima.
+- Propriedades novas para a classe Estacionamento: listaCarros (List<Veiculo>); listaMotos (List<Veiculo>); vagasCarro (int); vagasMoto (int); vagasCarroPcd(int); vagasCarroIdosos(int); vagasCarroGestantes(int);
+- Método AdicionarVeiculo() na classe Estacionamento foi complementado. Agora o programa pergunta ao usuário que tipo de veículo ele deseja estacionar (Moto ou Carro), depois pergunta qual a placa do veículo e se necessita de acessibilidade (PCD, Idosos e Gestantes);
+- Método RemoverVeiculo() na classe Estacionamento foi complementado. Agora é solicitado ao usuário a quantidade de horas que o veículo ficou estacionado, e a depender do tipo do veículo os valores do cálculo são atualizados antes do cálculo do valor total;
+- Método ListarVeiculos() na classe Estacionamento foi complementado. Agora uma lista com todos os veículos é exibida em um laço de repetição. Abaixo da lista é exibida a quantidade de vagas restante para cada tipo de veículo e critérios de acessibildiade;
+- Classe Veiculo criada, contendo a propriedade Placa e o método CalcularPreco();
+- Classe Carro criada, herdando a propriedade placa e o método CalcularPreco() da classe Veiculo, que é sobrescrito com os valores de estacionamento para carros;
+- Classe Moto criada, herdando a propriedade placa e o método CalcularPreco() da classe Veiculo, que é sobrescrito com os valores de estacionamento para motos.
